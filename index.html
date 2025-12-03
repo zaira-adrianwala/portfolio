@@ -1,27 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Zaira Adrianwala – Engineering Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-  <h1>Zaira Adrianwala – Engineering Portfolio</h1>
-  <p>If you see this page, your HTML is working correctly.</p>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering portfolio of Zaira Adrianwala – circuit design, embedded systems, PCB prototyping, and signal acquisition.">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f7f7f8;
+      color: #111;
+      line-height: 1.5;
+    }
 
-  <h2>About Me</h2>
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 1.5rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .project {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 1.2rem;
+    }
+
+    .project-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-meta {
+      font-size: 0.85rem;
+      color: #555;
+      margin-bottom: 0.8rem;
+    }
+
+    .project ul {
+      margin-top: 0.4rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      border-top: 1px solid #ddd;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #555;
+      text-align: center;
+      background: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  ZA – Engineering Portfolio
+</header>
+
+<main>
+
+  <h1>Zaira Adrianwala</h1>
+  <p>M.Eng Bioengineering, UC Berkeley — specializing in circuit design, embedded systems, PCB prototyping, and signal acquisition.</p>
   <p>
-    M.Eng Bioengineering student at UC Berkeley with experience in circuit design,
-    embedded systems, PCB prototyping, and signal acquisition.
+    <strong>Email:</strong> <a href="mailto:zadrianwala@berkeley.edu">zadrianwala@berkeley.edu</a><br>
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zaira-adrianwala" target="_blank">linkedin.com/in/zaira-adrianwala</a>
   </p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>CPR Coaching Device – Embedded System</li>
-    <li>Brain-on-Chip Prototype PCB – Aran Lab</li>
-    <li>Cytostretcher Pacing & Stretching Integration</li>
-    <li>EKG/EMG/EEG Biosignal Circuits</li>
-  </ul>
+  <div class="section" id="projects">
+    <h2>Selected Projects</h2>
+
+    <div class="project">
+      <div class="project-title">CPR Coaching Device — Embedded System with Real-Time Signal Processing</div>
+      <div class="project-meta">Circuit Designer & Embedded Developer · 2023–2024</div>
+      <p>Arduino-based CPR feedback device capable of measuring compression depth and rate using real-time signal acquisition and filtering.</p>
+      <ul>
+        <li>Designed analog signal-conditioning circuitry (low-pass/high-pass filtering).</li>
+        <li>Implemented sampling, filtering, and threshold logic on microcontroller.</li>
+        <li>Validated performance using oscilloscope measurements and controlled testing.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Brain-on-Chip Microfluidic System with Prototype PCB — Aran Lab</div>
+      <div class="project-meta">PCB Designer & Data Acquisition Engineer · 2024–2025</div>
+      <p>Designed microfluidic brain-on-chip system with integrated electrode interfaces and created a prototype PCB for signal routing and data acquisition.</p>
+      <ul>
+        <li>Completed schematic capture and early PCB layout for electrode interfacing.</li>
+        <li>Developed grounding strategy, routing constraints, and connector placement.</li>
+        <li>Integrated microfluidic structure constraints with electrical design.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Cytostretcher™ Pacing & Stretching Integration — Cardiac Mechanics Research Group</div>
+      <div class="project-meta">Hardware Integrator & Circuit Designer · 2024–2025</div>
+      <p>Integrated electrical pacing circuitry with mechanical stretching to stimulate hiPSC-cardiomyocytes within a multi-well plate system.</p>
+      <ul>
+        <li>Designed custom stimulation circuits and electrode placement.</li>
+        <li>Validated signal delivery and electrical performance.</li>
+        <li>Integrated electronics with 3D-printed mechanical components.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Multi-Signal Biosensing System (EKG, EMG, EEG)</div>
+      <div class="project-meta">Circuit Designer & Tester · 2023</div>
+      <p>Designed circuits for biosignal acquisition systems with analog filters and instrumentation amplifiers.</p>
+      <ul>
+        <li>Built analog front-end circuits for EKG, EMG, and EEG.</li>
+        <li>Performed signal acquisition using oscilloscope + MATLAB/Python.</li>
+        <li>Adjusted filters to improve noise rejection and signal clarity.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="section" id="skills">
+    <h2>Technical Skills</h2>
+    <p><strong>Hardware & Electronics:</strong> PCB design, schematic capture, analog & digital circuits, signal conditioning, microcontroller programming (Arduino), bench-top debugging.</p>
+    <p><strong>Tools & Software:</strong> Python, MATLAB, Fusion 360, oscilloscopes, multimeters, power supplies, basic Altium familiarity.</p>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to discuss my work or hardware opportunities, feel free to reach out.</p>
+    <p><strong>Email:</strong> <a href="mailto:zadrianwala@berkeley.edu">zadrianwala@berkeley.edu</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zaira-adrianwala" target="_blank">linkedin.com/in/zaira-adrianwala</a></p>
+  </div>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Zaira Adrianwala — Engineering Portfolio
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
