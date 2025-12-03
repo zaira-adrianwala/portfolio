@@ -1,36 +1,500 @@
-Hello, I'm Zaira Adrianwala!
-I’m a Master of Engineering student in Bioengineering Design at UC Berkeley, building on my B.S. from UC San Diego, and I’m driven to create technologies that improve patient outcomes. My work focuses on bridging engineering and medicine through thoughtful, hands-on design, and I’m especially interested in medical devices, prosthetics, and surgical robotics. I’m also committed to mentorship, community engagement, and expanding access to bioengineering as I continue growing as an engineer.
-Email: zadrianwala@berkeley.edu LinkedIn: linkedin.com/in/zaira-adrianwala
-Selected Projects
-CPR Coaching Device — Embedded System with Real-Time Signal Processing
-Circuit Designer & Embedded Developer · 2023–2024
-Arduino-based CPR feedback device capable of measuring compression depth and rate using real-time signal acquisition and filtering.
-	•	Designed analog signal-conditioning circuitry (low-pass/high-pass filtering).
-	•	Implemented sampling, filtering, and threshold logic on microcontroller.
-	•	Validated performance using oscilloscope measurements and controlled testing.
-Brain-on-Chip Microfluidic System with Prototype PCB — Aran Lab
-PCB Designer & Data Acquisition Engineer · 2024–2025
-Designed microfluidic brain-on-chip system with integrated electrode interfaces and created a prototype PCB for signal routing and data acquisition.
-	•	Completed schematic capture and early PCB layout for electrode interfacing.
-	•	Developed grounding strategy, routing constraints, and connector placement.
-	•	Integrated microfluidic structure constraints with electrical design.
-Cytostretcher™ Pacing & Stretching Integration — Cardiac Mechanics Research Group
-Hardware Integrator & Circuit Designer · 2024–2025
-Integrated electrical pacing circuitry with mechanical stretching to stimulate hiPSC-cardiomyocytes within a multi-well plate system.
-	•	Designed custom stimulation circuits and electrode placement.
-	•	Validated signal delivery and electrical performance.
-	•	Integrated electronics with 3D-printed mechanical components.
-Multi-Signal Biosensing System (EKG, EMG, EEG)
-Circuit Designer & Tester · 2023
-Designed circuits for biosignal acquisition systems with analog filters and instrumentation amplifiers.
-	•	Built analog front-end circuits for EKG, EMG, and EEG.
-	•	Performed signal acquisition using oscilloscope + MATLAB/Python.
-	•	Adjusted filters to improve noise rejection and signal clarity.
-Technical Skills
-Hardware & Electronics: PCB design, schematic capture, analog & digital circuits, signal conditioning, microcontroller programming (Arduino), bench-top debugging.
-Tools & Software: Python, MATLAB, Fusion 360, oscilloscopes, multimeters, power supplies, basic Altium familiarity.
-Contact
-If you'd like to discuss my work or hardware opportunities, feel free to reach out.
-Email: zadrianwala@berkeley.edu
-LinkedIn: linkedin.com/in/zaira-adrianwala
-© Zaira Adrianwala — Engineering Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zaira Adrianwala – Engineering Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering portfolio of Zaira Adrianwala – circuit design, embedded systems, PCB prototyping, and bioinstrumentation.">
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --fg: #0f172a;
+      --muted: #6b7280;
+      --accent: #1f2937;
+      --border: #e5e7eb;
+      --max-width: 960px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* Top navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .nav-brand {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+
+    .nav-links a {
+      margin-left: 1.25rem;
+      color: var(--muted);
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Layout */
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.25rem 1.25rem 3.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 2rem;
+      align-items: start;
+      margin-bottom: 3rem;
+    }
+
+    .hero-title {
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+      font-weight: 650;
+      margin: 0 0 0.75rem;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 0 0 1.25rem;
+    }
+
+    .hero-body {
+      font-size: 0.98rem;
+      margin: 0 0 1.5rem;
+    }
+
+    .hero-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .hero-meta div {
+      margin-bottom: 0.25rem;
+    }
+
+    .hero-right {
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-left: 1px solid var(--border);
+      padding-left: 1.25rem;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-right {
+        border-left: none;
+        border-top: 1px solid var(--border);
+        padding-left: 0;
+        padding-top: 1rem;
+        margin-top: 0.5rem;
+      }
+      .nav-links { display: none; }
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Work / case studies */
+    .work-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .case-study {
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 1.25rem 1.35rem;
+    }
+
+    .case-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0 0 0.3rem;
+    }
+
+    .case-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.7rem;
+    }
+
+    .case-summary {
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .case-list-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin: 0.2rem 0;
+    }
+
+    .case-list {
+      font-size: 0.87rem;
+      padding-left: 1.2rem;
+      margin: 0.3rem 0 0.4rem;
+    }
+
+    .case-list li {
+      margin-bottom: 0.2rem;
+    }
+
+    .case-footer {
+      font-size: 0.86rem;
+      margin-top: 0.6rem;
+    }
+
+    .case-link {
+      font-size: 0.86rem;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    /* Coursework & skills */
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 720px) {
+      .two-col {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 1.2rem 1.35rem;
+      font-size: 0.9rem;
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 0.98rem;
+    }
+
+    .card ul {
+      padding-left: 1.15rem;
+      margin: 0.35rem 0 0;
+    }
+
+    .card li {
+      margin-bottom: 0.2rem;
+    }
+
+    /* Contact / footer */
+    .btn {
+      display: inline-block;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      padding: 0.4rem 0.9rem;
+      font-size: 0.86rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #fff;
+      background: var(--accent);
+    }
+    .btn-light {
+      background: #fff;
+      color: var(--accent);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 1.25rem 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: #fff;
+    }
+
+    footer .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">ZA</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#skills">Skills</a>
+        <a href="Zaira_Adrianwala_Resume.pdf" target="_blank">Résumé</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero / About -->
+    <section id="about" class="hero">
+      <div>
+        <h1 class="hero-title">I design and test hardware for sensing and stimulation in biomedical systems.</h1>
+        <p class="hero-tagline">
+          I’m a bioengineering M.Eng student at UC Berkeley with experience in circuit design, embedded systems,
+          bioinstrumentation, and PCB strategy.
+        </p>
+        <p class="hero-body">
+          I like working on problems where I can connect physiology with electronics: building circuits that sense
+          what the body is doing, creating stimulation hardware, and making sure everything is testable and reliable
+          in the lab. My recent work includes a CPR coaching device, a brain-on-chip platform, and hardware to pace
+          and stretch cardiac tissue.
+        </p>
+        <div class="hero-meta">
+          <div><strong>Current:</strong> M.Eng Bioengineering, UC&nbsp;Berkeley</div>
+          <div><strong>Previous:</strong> B.S. Bioengineering (Biosystems), UC&nbsp;San&nbsp;Diego</div>
+          <div><strong>Email:</strong> <a href="mailto:zadrianwala@berkeley.edu">zadrianwala@berkeley.edu</a></div>
+          <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zaira-adrianwala" target="_blank">linkedin.com/in/zaira-adrianwala</a></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <p>
+          I’m especially excited by roles where I can:
+        </p>
+        <ul>
+          <li>Design and debug circuits and early-stage PCBAs.</li>
+          <li>Work hands-on with benchtop equipment and prototypes.</li>
+          <li>Build hardware that supports medical devices, sensing, or robotics.</li>
+        </ul>
+        <p style="margin-top:0.8rem;">
+          <a href="Zaira_Adrianwala_Resume.pdf" class="btn" target="_blank">Download Résumé</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Work / projects -->
+    <section id="work">
+      <h2>Selected Work</h2>
+      <p class="section-subtitle">
+        A sample of projects and research experiences from UC San Diego and UC Berkeley focused on circuits,
+        embedded systems, and bioinstrumentation. These align with my resume and go deeper into the engineering work.
+      </p>
+
+      <div class="work-grid">
+        <!-- CPR device -->
+        <article class="case-study">
+          <h3 class="case-title">CPR Coaching Device – Arduino-Based Embedded System</h3>
+          <div class="case-meta">Engineering World Health · UC San Diego</div>
+          <p class="case-summary">
+            Designed an Arduino-based CPR coaching device that provides real-time performance feedback on compression
+            rate and technique during training.
+          </p>
+          <div class="case-list-title">What I did</div>
+          <ul class="case-list">
+            <li>Designed system circuitry for sensing compression rate and amplitude.</li>
+            <li>Implemented embedded logic for sampling, filtering, and feedback thresholds.</li>
+            <li>Validated behavior using controlled inputs and iterative tuning.</li>
+          </ul>
+          <div class="case-footer">
+            <span class="case-link">View project details (coming soon)</span>
+          </div>
+        </article>
+
+        <!-- Brain-on-chip -->
+        <article class="case-study">
+          <h3 class="case-title">Brain-on-Chip Microfluidic System + Prototype PCB</h3>
+          <div class="case-meta">Aran Lab · UC San Diego</div>
+          <p class="case-summary">
+            Contributed to a brain-on-chip platform by designing microfluidic structures, optimizing electrode placement
+            for neural data acquisition, and starting a prototype PCB for signal routing.
+          </p>
+          <div class="case-list-title">What I did</div>
+          <ul class="case-list">
+            <li>Designed microfluidic channels and electrode placement for neural recording.</li>
+            <li>Created a prototype PCB (schematic + early layout) for electrode interfacing.</li>
+            <li>Analyzed continuous biological data using high-throughput techniques.</li>
+            <li>Developed a digital lateral flow assay measuring voltage changes across silver nanowires for quantitative antibody detection.</li>
+          </ul>
+          <div class="case-footer">
+            <span class="case-link">View project details (coming soon)</span>
+          </div>
+        </article>
+
+        <!-- Cytostretcher -->
+        <article class="case-study">
+          <h3 class="case-title">Cytostretcher™ Pacing and Stretching Hardware</h3>
+          <div class="case-meta">Cardiac Mechanics Research Group · UC San Diego</div>
+          <p class="case-summary">
+            Enhanced the Cytostretcher™ platform by integrating electrical pacing with mechanical stretching to better
+            mimic mature cardiac tissue behavior in vitro.
+          </p>
+          <div class="case-list-title">What I did</div>
+          <ul class="case-list">
+            <li>Designed and integrated electrode placement and stimulation circuitry.</li>
+            <li>Developed multi-well device structures using Fusion 360 and 3D printing.</li>
+            <li>Coordinated mechanical–electrical integration to support reliable experiments.</li>
+          </ul>
+          <div class="case-footer">
+            <span class="case-link">View project details (coming soon)</span>
+          </div>
+        </article>
+
+        <!-- Biosignal circuits -->
+        <article class="case-study">
+          <h3 class="case-title">Biosignal Instrumentation – EKG, EMG, and EEG Circuits</h3>
+          <div class="case-meta">BENG 152 · UC San Diego</div>
+          <p class="case-summary">
+            Built and tested circuits for acquiring multiple physiological signals and measuring responses to controlled
+            stimuli, including exposure to video game violence.
+          </p>
+          <div class="case-list-title">What I did</div>
+          <ul class="case-list">
+            <li>Designed EKG, EMG, and EEG circuits with appropriate analog filtering stages.</li>
+            <li>Implemented instrumentation amplifier configurations for biosignal acquisition.</li>
+            <li>Collected and analyzed signals using MATLAB/Python-based workflows.</li>
+          </ul>
+          <div class="case-footer">
+            <span class="case-link">View project details (coming soon)</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Coursework & skills -->
+    <section id="coursework">
+      <h2>Relevant Coursework</h2>
+      <p class="section-subtitle">
+        Coursework from UC San Diego and UC Berkeley that underpins my work in circuits, signal processing,
+        and bioinstrumentation.
+      </p>
+      <div class="card">
+        <ul>
+          <li>CSE 8A – Introduction to Python</li>
+          <li>BENG 2 – Introduction to MATLAB</li>
+          <li>BENG 133 – Computational Engineering</li>
+          <li>ECE 35 – Introduction to Analog Design</li>
+          <li>ECE 45 – Circuits and Systems</li>
+          <li>BENG 135 – Biomedical Signals and Systems</li>
+          <li>BENG 152 – Bioengineering Lab</li>
+          <li>BENG 186B – Bioinstrumentation Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Hardware & Electronics</h3>
+          <ul>
+            <li>Circuit design (analog and digital)</li>
+            <li>Early-stage PCB schematic/layout experience</li>
+            <li>Biosignal instrumentation and signal conditioning</li>
+            <li>Microcontroller development (Arduino)</li>
+            <li>Prototype development and bench-top debugging</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software & Tools</h3>
+          <ul>
+            <li>Python, MATLAB</li>
+            <li>Fusion 360 (3D CAD)</li>
+            <li>Oscilloscopes, multimeters, power supplies</li>
+            <li>Basic familiarity with Altium / EDA workflows</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="section-subtitle">
+        If you’re interested in my work or would like to talk about hardware, bioinstrumentation, or embedded systems roles,
+        I’d be happy to connect.
+      </p>
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:zadrianwala@berkeley.edu">zadrianwala@berkeley.edu</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zaira-adrianwala" target="_blank">linkedin.com/in/zaira-adrianwala</a></p>
+        <p style="margin-top:0.8rem;">
+          <a href="Zaira_Adrianwala_Resume.pdf" class="btn" target="_blank">Download Résumé</a>
+          <span style="margin-left:0.6rem; font-size:0.85rem; color:var(--muted);">Resume-aligned with the projects shown here.</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Zaira Adrianwala</div>
+      <div>Hardware · Bioinstrumentation · Embedded Systems</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
